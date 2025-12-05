@@ -56,6 +56,7 @@ export const summerStory: Story = {
     {
       id: 9,
       text: 'Sure enough, nine golden flames sat in the hollow of the tree, glowing warmly. Inside was another clue.',
+      image: '/images/summer/page-9.png',
       challenge: {
         type: 'hidden-object',
         title: '🔍 Hidden Object Challenge!',
