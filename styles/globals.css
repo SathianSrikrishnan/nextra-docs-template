@@ -1,0 +1,89 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800&family=Quicksand:wght@400;500;600;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Nature Magic Theme Base Styles */
+:root {
+  --color-forest: #16a34a;
+  --color-sunset: #f97316;
+  --color-sky: #0ea5e9;
+  --color-lavender: #a855f7;
+}
+
+/* Custom scrollbar for storybook feel */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f0fdf4;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #86efac;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #4ade80;
+}
+
+/* Story text styling */
+.story-text {
+  @apply font-story text-lg leading-relaxed;
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+}
+
+/* Challenge card styling */
+.challenge-card {
+  @apply rounded-2xl p-6 shadow-lg;
+  background: linear-gradient(135deg, #fff7ed 0%, #fef3c7 100%);
+  border: 3px solid #fdba74;
+}
+
+/* Hidden object card */
+.hidden-object-card {
+  @apply rounded-2xl p-6 shadow-lg;
+  background: linear-gradient(135deg, #f0f9ff 0%, #e0f2fe 100%);
+  border: 3px solid #7dd3fc;
+}
+
+/* Treasure hunt card */
+.treasure-hunt-card {
+  @apply rounded-2xl p-6 shadow-lg;
+  background: linear-gradient(135deg, #f0fdf4 0%, #dcfce7 100%);
+  border: 3px solid #86efac;
+}
+
+/* Navigation buttons */
+.nav-button {
+  @apply w-14 h-14 rounded-full flex items-center justify-center transition-all duration-200;
+  @apply bg-white/80 backdrop-blur-sm shadow-lg hover:shadow-xl;
+  @apply active:scale-95 hover:bg-white;
+}
+
+/* Page container for mobile */
+.story-page {
+  min-height: 100dvh;
+  min-height: -webkit-fill-available;
+}
+
+/* Gradient backgrounds for seasons */
+.bg-spring {
+  background: linear-gradient(180deg, #fef3c7 0%, #dcfce7 50%, #bbf7d0 100%);
+}
+
+.bg-summer {
+  background: linear-gradient(180deg, #fef08a 0%, #bae6fd 50%, #a5f3fc 100%);
+}
+
+.bg-fall {
+  background: linear-gradient(180deg, #fed7aa 0%, #fecaca 50%, #fde68a 100%);
+}
+
+.bg-winter {
+  background: linear-gradient(180deg, #e0f2fe 0%, #f3e8ff 50%, #faf5ff 100%);
+}
+
