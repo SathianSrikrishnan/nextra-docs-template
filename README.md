@@ -1,6 +1,6 @@
 # Seasons of Wonder 🌸☀️🍂❄️
 
-A magical interactive storybook for Issa and Sia, built with love by Dad.
+A magical interactive storybook for Isa and Sia, built with love by Dad.
 
 ## 🚀 How to Deploy
 
@@ -25,9 +25,9 @@ A magical interactive storybook for Issa and Sia, built with love by Dad.
 
 ### 1. Character Avatars (The Explorers)
 Upload these photos to `public/images/avatars/`:
-*   `avatar-issa.png`
-*   `avatar-sia.png`
-*   `avatar-dad.png`
+*   `isa.png`
+*   `sia.png`
+*   `dad.png`
 
 ### 2. Story Illustrations
 *   Spring: `public/images/spring/`

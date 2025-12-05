@@ -1,6 +1,7 @@
 import React from 'react';
 import Head from 'next/head';
 import Link from 'next/link';
+import { motion } from 'framer-motion';
 
 export default function LandingPage() {
   return (
@@ -11,70 +12,120 @@ export default function LandingPage() {
         <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
       </Head>
 
-      <div className="min-h-screen bg-gradient-to-b from-forest-900 via-forest-800 to-forest-600 flex flex-col items-center justify-center px-6 relative overflow-hidden">
-        {/* Magical particles/Forest atmosphere */}
+      {/* Red Background as requested */}
+      <div className="min-h-screen bg-gradient-to-br from-red-700 via-red-600 to-orange-800 flex flex-col items-center justify-center px-6 relative overflow-hidden">
+        
+        {/* Animated Background Particles */}
         <div className="absolute inset-0 overflow-hidden pointer-events-none">
-          <div className="absolute top-1/4 left-1/4 w-2 h-2 bg-yellow-200 rounded-full animate-sparkle opacity-75" style={{ animationDelay: '0s' }} />
-          <div className="absolute top-3/4 left-1/3 w-3 h-3 bg-yellow-100 rounded-full animate-float opacity-50" style={{ animationDelay: '1s' }} />
-          <div className="absolute top-1/3 right-1/4 w-2 h-2 bg-yellow-300 rounded-full animate-sparkle opacity-60" style={{ animationDelay: '2s' }} />
-          <div className="absolute bottom-1/4 right-1/3 w-4 h-4 bg-green-300 rounded-full animate-float opacity-30 blur-sm" style={{ animationDelay: '3s' }} />
-          <div className="absolute top-1/2 left-1/2 w-1 h-1 bg-white rounded-full animate-sparkle opacity-80" style={{ animationDelay: '1.5s' }} />
-        </div>
-
-        {/* Subtle pattern overlay - Trees suggestion */}
-        <div className="absolute inset-0 opacity-5">
-          <div className="absolute inset-0" style={{
-            backgroundImage: `linear-gradient(30deg, #ffffff 12%, transparent 12.5%, transparent 87%, #ffffff 87.5%, #ffffff),
-                              linear-gradient(150deg, #ffffff 12%, transparent 12.5%, transparent 87%, #ffffff 87.5%, #ffffff),
-                              linear-gradient(30deg, #ffffff 12%, transparent 12.5%, transparent 87%, #ffffff 87.5%, #ffffff),
-                              linear-gradient(150deg, #ffffff 12%, transparent 12.5%, transparent 87%, #ffffff 87.5%, #ffffff),
-                              linear-gradient(60deg, #ffffff77 25%, transparent 25.5%, transparent 75%, #ffffff77 75%, #ffffff77),
-                              linear-gradient(60deg, #ffffff77 25%, transparent 25.5%, transparent 75%, #ffffff77 75%, #ffffff77)`,
-            backgroundSize: '80px 140px',
-            backgroundPosition: '0 0, 0 0, 40px 70px, 40px 70px, 0 0, 40px 70px'
-          }} />
+          {[...Array(20)].map((_, i) => (
+            <motion.div
+              key={i}
+              className="absolute bg-white/10 rounded-full"
+              style={{
+                width: Math.random() * 100 + 50,
+                height: Math.random() * 100 + 50,
+                left: Math.random() * 100 + '%',
+                top: Math.random() * 100 + '%',
+              }}
+              animate={{
+                y: [0, Math.random() * -50, 0],
+                scale: [1, 1.1, 1],
+                opacity: [0.1, 0.3, 0.1],
+              }}
+              transition={{
+                duration: Math.random() * 5 + 5,
+                repeat: Infinity,
+                ease: "easeInOut",
+              }}
+            />
+          ))}
         </div>
 
         {/* Content */}
-        <div className="relative z-10 text-center max-w-2xl">
-          {/* Headline */}
-          <h1 className="font-display text-5xl md:text-7xl font-extrabold text-white mb-6 tracking-tight drop-shadow-lg">
-            Experiments in AI
-          </h1>
+        <div className="relative z-10 text-center max-w-3xl">
+          
+          {/* Branding / Intro */}
+          <motion.div 
+            initial={{ opacity: 0, y: -20 }}
+            animate={{ opacity: 1, y: 0 }}
+            className="mb-12"
+          >
+            <h2 className="font-display text-xl md:text-2xl font-bold text-orange-200 uppercase tracking-widest mb-2">
+              sathian.ai
+            </h2>
+            <h1 className="font-display text-5xl md:text-7xl font-extrabold text-white mb-6 tracking-tight drop-shadow-lg leading-tight">
+              Experiments in AI<br />
+              <span className="text-3xl md:text-4xl font-medium text-red-100 opacity-90">
+                Learning, Building, and Teaching
+              </span>
+            </h1>
+          </motion.div>
 
-          {/* Subtext */}
-          <p className="font-story text-xl md:text-2xl text-green-50 mb-16 leading-relaxed drop-shadow-md">
-            Test projects to learn, build, and teach.
-          </p>
+          {/* Team Avatar Preview */}
+          <motion.div 
+            initial={{ opacity: 0, scale: 0.8 }}
+            animate={{ opacity: 1, scale: 1 }}
+            transition={{ delay: 0.2 }}
+            className="flex justify-center gap-6 mb-12"
+          >
+            {[
+              { name: 'Isa', img: '/images/avatars/isa.png', delay: 0 },
+              { name: 'Dad', img: '/images/avatars/dad.png', delay: 0.1, large: true },
+              { name: 'Sia', img: '/images/avatars/sia.png', delay: 0.2 },
+            ].map((p) => (
+              <div key={p.name} className="flex flex-col items-center">
+                <div className={`relative ${p.large ? 'w-24 h-24' : 'w-20 h-20'} rounded-full border-4 border-white/30 shadow-xl bg-white/10 backdrop-blur-sm overflow-hidden`}>
+                   <img 
+                      src={p.img} 
+                      alt={p.name} 
+                      className="w-full h-full object-cover opacity-90 hover:opacity-100 transition-opacity" 
+                      onError={(e) => {
+                        (e.target as HTMLImageElement).src = `https://api.dicebear.com/7.x/avataaars/svg?seed=${p.name}`;
+                      }}
+                   />
+                </div>
+                <span className="mt-2 text-white font-display font-bold text-sm opacity-80">{p.name}</span>
+              </div>
+            ))}
+          </motion.div>
 
-          {/* Enter Button */}
+          {/* Enter Project One Button */}
           <Link href="/seasons-of-wonder">
-            <button className="
-              group
-              px-10 py-5 
-              bg-yellow-400 hover:bg-yellow-300
-              text-forest-900 font-display font-bold text-xl md:text-2xl
-              rounded-2xl
-              shadow-[0_0_20px_rgba(250,204,21,0.5)] hover:shadow-[0_0_30px_rgba(250,204,21,0.8)]
-              transform hover:scale-105 active:scale-95
-              transition-all duration-200
-              border-4 border-yellow-200
-            ">
-              <span className="block text-sm font-normal text-forest-800 mb-1">
-                Begin the Adventure
+            <motion.button 
+              whileHover={{ scale: 1.05 }}
+              whileTap={{ scale: 0.95 }}
+              className="
+                group relative
+                px-12 py-6 
+                bg-yellow-400 hover:bg-yellow-300
+                text-red-900 font-display font-extrabold text-2xl md:text-3xl
+                rounded-3xl
+                shadow-[0_10px_40px_rgba(250,204,21,0.4)]
+                border-b-8 border-yellow-600 active:border-b-0 active:translate-y-2
+                transition-all
+              "
+            >
+              <span className="block text-base font-bold text-red-800/70 uppercase tracking-wider mb-1">
+                Enter Project One
               </span>
-              <span className="flex items-center gap-3 justify-center">
-                <span className="animate-bounce">✨</span>
-                Enter the Storybook World
-                <span className="animate-bounce" style={{ animationDelay: '0.1s' }}>✨</span>
+              <span className="flex items-center gap-3">
+                Seasons of Wonder
+                <span className="group-hover:rotate-12 transition-transform">➜</span>
               </span>
-            </button>
+              
+              {/* Badge */}
+              <div className="absolute -top-4 -right-4 bg-white text-red-600 text-xs font-bold px-3 py-1 rounded-full shadow-md transform rotate-12">
+                New!
+              </div>
+            </motion.button>
           </Link>
+          
         </div>
 
         {/* Footer */}
-        <div className="absolute bottom-6 text-green-200/80 text-sm font-story">
-          Made with love by Dad
+        <div className="absolute bottom-8 text-white/60 text-sm font-story flex flex-col items-center gap-1">
+          <p>Built with ❤️ by Dad for Isa & Sia</p>
+          <p className="text-xs opacity-70">© 2025</p>
         </div>
       </div>
     </>
