@@ -1,23 +1,47 @@
-# Nextra Docs Template 
+# Seasons of Wonder 🌸☀️🍂❄️
 
-This is a template for creating documentation with [Nextra](https://nextra.site).
+A magical interactive storybook for Issa and Sia, built with love by Dad.
 
-[**Live Demo →**](https://nextra-docs-template.vercel.app)
+## 🚀 How to Deploy
 
-[![](.github/screenshot.png)](https://nextra-docs-template.vercel.app)
+1.  **Create a GitHub Repo:**
+    *   Go to GitHub.com -> New Repository.
+    *   Name it `seasons-of-wonder`.
+    *   Do NOT initialize with README, .gitignore, or license.
 
-## Quick Start
+2.  **Push Code:**
+    ```bash
+    git remote add origin https://github.com/YOUR_USERNAME/seasons-of-wonder.git
+    git branch -M main
+    git push -u origin main
+    ```
 
-Click the button to clone this repository and deploy it on Vercel:
+3.  **Deploy on Vercel:**
+    *   Go to Vercel Dashboard -> Add New Project.
+    *   Import `seasons-of-wonder` repo.
+    *   Click **Deploy**.
 
-[![](https://vercel.com/button)](https://vercel.com/new/clone?s=https%3A%2F%2Fgithub.com%2Fshuding%2Fnextra-docs-template&showOptionalTeamCreation=false)
+## 🖼️ Customizing Images
 
-## Local Development
+### 1. Character Avatars (The Explorers)
+Upload these photos to `public/images/avatars/`:
+*   `avatar-issa.png`
+*   `avatar-sia.png`
+*   `avatar-dad.png`
 
-First, run `pnpm i` to install the dependencies.
+### 2. Story Illustrations
+*   Spring: `public/images/spring/`
+*   Summer: `public/images/summer/`
+*   Fall:   `public/images/fall/`
+*   Winter: `public/images/winter/`
 
-Then, run `pnpm dev` to start the development server and visit localhost:3000.
+### 3. Story Characters
+*   Luna, Pip, etc.: `public/images/characters/`
 
-## License
+## ✨ Features
+*   Interactive math & hidden object challenges.
+*   Confetti celebration on completion!
+*   Mobile-optimized for reading together.
+*   Progress saving (so you can take a break).
 
-This project is licensed under the MIT License.
+Made with ❤️
