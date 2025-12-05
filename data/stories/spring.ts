@@ -145,7 +145,7 @@ export const springStory: Story = {
     {
       id: 22,
       text: 'Sage appeared overhead. "You have done well, young ones. The Spring Crystal will guide you through the seasons. Keep it safe."',
-      image: '/images/spring/page-22.png',
+      image: '/images/spring/page-21.png',
     },
     {
       id: 23,

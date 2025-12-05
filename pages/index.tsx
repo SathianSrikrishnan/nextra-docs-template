@@ -50,9 +50,6 @@ export default function LandingPage() {
             animate={{ opacity: 1, y: 0 }}
             className="mb-12"
           >
-            <h2 className="font-display text-xl md:text-2xl font-bold text-orange-200 uppercase tracking-widest mb-2">
-              sathian.ai
-            </h2>
             <h1 className="font-display text-5xl md:text-7xl font-extrabold text-white mb-6 tracking-tight drop-shadow-lg leading-tight">
               Experiments in AI<br />
               <span className="text-3xl md:text-4xl font-medium text-red-100 opacity-90">

@@ -15,9 +15,9 @@ export default function SeasonsOfWonderHome() {
   ];
 
   const explorers = [
-    { name: 'Isa', title: 'Nature Detective', img: '/images/avatars/isa.png', color: 'bg-pink-100 text-pink-700 border-pink-200 ring-pink-300' },
-    { name: 'Sia', title: 'Pattern Expert', img: '/images/avatars/sia.png', color: 'bg-purple-100 text-purple-700 border-purple-200 ring-purple-300' },
-    { name: 'Dad', title: 'Chief Storyteller', img: '/images/avatars/dad.png', color: 'bg-blue-100 text-blue-700 border-blue-200 ring-blue-300' },
+    { name: 'Isa', title: 'Nature Detective', img: '/images/avatars/isa.png', color: 'bg-pink-100 text-pink-700 border-pink-200', ring: 'ring-pink-300' },
+    { name: 'Sia', title: 'Pattern Expert', img: '/images/avatars/sia.png', color: 'bg-purple-100 text-purple-700 border-purple-200', ring: 'ring-purple-300' },
+    { name: 'Dad', title: 'Chief Storyteller', img: '/images/avatars/dad.png', color: 'bg-blue-100 text-blue-700 border-blue-200', ring: 'ring-blue-300' },
   ];
 
   return (
@@ -70,8 +70,8 @@ export default function SeasonsOfWonderHome() {
             href="/"
             className="inline-flex items-center gap-2 px-4 py-2 bg-white/80 backdrop-blur-sm rounded-full text-sm font-display font-bold text-gray-600 hover:text-gray-900 hover:bg-white transition-all shadow-sm hover:shadow-md"
           >
-            <span className="text-lg">🚀</span>
-            <span className="tracking-wide">Sathian.ai</span>
+            <span className="text-lg">🔙</span>
+            <span className="tracking-wide">Back</span>
           </Link>
           
           <div className="hidden md:flex items-center gap-3 bg-white/50 backdrop-blur-sm px-4 py-1.5 rounded-full border border-white/50">

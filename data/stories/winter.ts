@@ -176,4 +176,4 @@ export const winterStory: Story = {
       image: '/images/winter/cover.png',
     },
   ],
-
+};

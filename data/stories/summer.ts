@@ -11,7 +11,7 @@ export const summerStory: Story = {
     {
       id: 1,
       text: 'The summer sun blazed bright and warm over the Whispering Woods. Luna stretched lazily in a patch of golden light, her Spring Crystal glowing softly at her neck.',
-      image: '/images/summer/page-1.png',
+      image: '/images/summer/cover.png',
     },
     {
       id: 2,
@@ -104,7 +104,7 @@ export const summerStory: Story = {
     },
     {
       id: 15,
-      text: '"This is so much fun!" Fern said. "I\'ve never explored the forest like this before. Every corner has a surprise!"',
+      text: '"This is so much fun!" Fern said. "I\'ve never explored the forest like this before. Every corner has a surprise! I wonder what treasures our friends at home can find in their own world?"',
       image: '/images/summer/page-9.png',
       challenge: {
         type: 'treasure-hunt',
