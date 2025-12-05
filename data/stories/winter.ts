@@ -5,27 +5,28 @@ export const winterStory: Story = {
   title: 'The Crystal Guardian',
   season: 'winter',
   description: 'As snow blankets the Whispering Woods, Luna must unite all four crystals to awaken the ancient Guardian and save the forest.',
-  coverImage: '/images/winter/cover.jpg',
+  coverImage: '/images/winter/cover.png',
   characters: ['Luna the Fox', 'Pip the Bluebird', 'Sage the Owl', 'Fern the Deer', 'Bramble the Hedgehog', 'The Crystal Guardian'],
   pages: [
     {
       id: 1,
       text: 'Snow fell softly on the Whispering Woods, transforming it into a glittering wonderland. Luna\'s three crystals pulsed with growing urgency - something magical was about to happen.',
-      image: '/images/winter/page-1.jpg',
+      image: '/images/winter/page-1.png',
     },
     {
       id: 2,
       text: 'Sage appeared through the snowflakes, his white feathers almost invisible against the winter sky. "The time has come, Luna. The Winter Solstice is here - the longest night of the year."',
-      image: '/images/winter/page-2.jpg',
+      image: '/images/winter/page-2.png',
     },
     {
       id: 3,
       text: '"On this night," Sage continued, "the ancient Crystal Guardian awakens. But only if someone worthy brings all four seasonal crystals together."',
+      image: '/images/winter/page-3.png',
     },
     {
       id: 4,
       text: 'All of Luna\'s friends gathered: Pip, Fern, and Bramble. "We\'ve been with you every step," Pip chirped. "We\'ll see this through together."',
-      image: '/images/winter/page-3.jpg',
+      image: '/images/winter/page-4.png',
     },
     {
       id: 5,
@@ -40,17 +41,17 @@ export const winterStory: Story = {
     {
       id: 6,
       text: '"Thirty-seven! The 37th icicle on the Great Frozen Falls!" Luna bounded through the snow, her friends close behind.',
-      image: '/images/winter/page-4.jpg',
+      image: '/images/winter/page-5.png',
     },
     {
       id: 7,
       text: 'The Great Frozen Falls was magnificent - a wall of ice sculptures created by nature itself. Icicles hung like crystal chandeliers.',
-      image: '/images/winter/page-5.jpg',
+      image: '/images/winter/page-7.png',
     },
     {
       id: 8,
       text: 'They counted carefully until they reached the 37th icicle. It sparkled differently than the others - this was no ordinary ice.',
-      image: '/images/winter/page-6.jpg',
+      image: '/images/winter/page-6.png',
       challenge: {
         type: 'hidden-object',
         title: '🔍 Hidden Object Challenge!',
@@ -70,20 +71,22 @@ export const winterStory: Story = {
     {
       id: 9,
       text: 'Luna touched the 37th icicle, and it transformed in her paw - the Winter Crystal, pure white with a core of swirling silver.',
+      image: '/images/winter/page-9.png',
     },
     {
       id: 10,
       text: '"Now you have all four!" Bramble squeaked excitedly. "Spring\'s green, Summer\'s gold, Fall\'s amber, and Winter\'s silver!"',
-      image: '/images/winter/page-7.jpg',
+      image: '/images/winter/page-11.png',
     },
     {
       id: 11,
       text: 'But then the ground trembled. From the ice emerged a voice: "WHO DARES CLAIM THE SEASONAL CRYSTALS?"',
+      image: '/images/winter/page-11.png',
     },
     {
       id: 12,
       text: 'A figure formed from snow and starlight - the Crystal Guardian, ancient and powerful. "To prove you are worthy, answer my challenges three."',
-      image: '/images/winter/page-8.jpg',
+      image: '/images/winter/page-8.png',
       challenge: {
         type: 'math',
         title: '🧮 Challenge Time!',
@@ -94,11 +97,12 @@ export const winterStory: Story = {
     {
       id: 13,
       text: '"91 days each, with 1 day left over!" Luna answered confidently. "That extra day is magical - like today, the Solstice!"',
+      image: '/images/winter/page-13.png',
     },
     {
       id: 14,
       text: 'The Guardian nodded, impressed. "Second challenge: Throughout your journeys, you faced many tests. What did they teach you?"',
-      image: '/images/winter/page-9.jpg',
+      image: '/images/winter/page-14.png',
       challenge: {
         type: 'treasure-hunt',
         title: '🗺️ Real World Quest!',
@@ -109,11 +113,12 @@ export const winterStory: Story = {
     {
       id: 15,
       text: 'Luna spoke from her heart: "I learned that every problem has a solution if you think carefully. That friends make hard journeys easier. And that every season brings its own kind of magic."',
+      image: '/images/winter/page-15.png',
     },
     {
       id: 16,
       text: 'The Guardian smiled, and the coldness in its form began to warm. "Final challenge. Place your crystals and speak the truth of what you wish for the forest."',
-      image: '/images/winter/page-10.jpg',
+      image: '/images/winter/page-8.png',
     },
     {
       id: 17,
@@ -128,7 +133,7 @@ export const winterStory: Story = {
     {
       id: 18,
       text: '"One hundred glimmers of light!" As Luna spoke the number, the crystals began to glow and rise into the air.',
-      image: '/images/winter/page-11.jpg',
+      image: '/images/winter/page-11.png',
     },
     {
       id: 19,
@@ -137,25 +142,27 @@ export const winterStory: Story = {
     {
       id: 20,
       text: 'The crystals merged into a brilliant rainbow of light. The Guardian transformed from ice into pure warmth and kindness.',
-      image: '/images/winter/page-12.jpg',
+      image: '/images/winter/page-11.png',
     },
     {
       id: 21,
       text: '"Luna, you and your friends have proven yourselves true Forest Champions," the Guardian declared. "Your wish is granted - for this year and all years to come."',
+      image: '/images/winter/page-21.png',
     },
     {
       id: 22,
       text: 'From the merged crystals, a new jewel formed - the Forever Crystal, containing all the magic of the seasons. It settled gently around Luna\'s neck.',
-      image: '/images/winter/page-13.jpg',
+      image: '/images/winter/page-13.png',
     },
     {
       id: 23,
       text: 'The Guardian faded into starlight, leaving behind a blessing: "Return each year, young champions. New adventures await those who believe."',
+      image: '/images/winter/page-23.png',
     },
     {
       id: 24,
       text: 'As the sun rose on the shortest day, painting the snow pink and gold, Luna and her friends celebrated. They had done it - together.',
-      image: '/images/winter/page-14.jpg',
+      image: '/images/winter/page-14.png',
       challenge: {
         type: 'math',
         title: '🧮 Final Winter Challenge!',
@@ -169,5 +176,4 @@ export const winterStory: Story = {
       image: '/images/winter/cover.png',
     },
   ],
-};
 
