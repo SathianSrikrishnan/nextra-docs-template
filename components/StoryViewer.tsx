@@ -194,7 +194,7 @@ export const StoryViewer: React.FC<StoryViewerProps> = ({ story, seasonInfo }) =
             <button
               onClick={goToNextPage}
               className={`
-                flex-[2] flex items-center justify-center gap-2 py-3 md:py-4 rounded-2xl font-display font-bold text-lg text-white shadow-lg transform hover:scale-[1.02] active:scale-95 transition-all
+                flex-[2] flex items-center justify-center gap-2 py-3 md:py-4 rounded-2xl font-display font-bold text-lg shadow-lg transform hover:scale-[1.02] active:scale-95 transition-all
                 ${seasonInfo.colorTheme.button}
               `}
             >

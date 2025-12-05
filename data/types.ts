@@ -54,7 +54,7 @@ export const SEASONS: SeasonInfo[] = [
       bg: 'bg-green-50',
       text: 'text-green-900',
       accent: 'bg-green-400',
-      button: 'bg-green-500 hover:bg-green-600',
+      button: 'bg-green-500 hover:bg-green-600 text-white',
     }
   },
   {
@@ -68,7 +68,7 @@ export const SEASONS: SeasonInfo[] = [
       bg: 'bg-yellow-50',
       text: 'text-yellow-900',
       accent: 'bg-yellow-400',
-      button: 'bg-yellow-500 hover:bg-yellow-600',
+      button: 'bg-yellow-500 hover:bg-yellow-600 text-white',
     }
   },
   {
@@ -82,7 +82,7 @@ export const SEASONS: SeasonInfo[] = [
       bg: 'bg-orange-50',
       text: 'text-orange-900',
       accent: 'bg-orange-400',
-      button: 'bg-orange-500 hover:bg-orange-600',
+      button: 'bg-orange-500 hover:bg-orange-600 text-white',
     }
   },
   {
