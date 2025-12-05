@@ -11,7 +11,7 @@ export const fallStory: Story = {
     {
       id: 1,
       text: 'The Whispering Woods had transformed into a painting of gold, orange, and crimson. Luna watched leaves dance in the cool autumn breeze, her Spring and Summer Crystals glowing warmly.',
-      image: '/images/fall/page-1.png',
+      image: '/images/fall/cover.png',
     },
     {
       id: 2,
@@ -26,7 +26,7 @@ export const fallStory: Story = {
     {
       id: 4,
       text: 'A small hedgehog named Bramble rolled up to them. "I found something! When the wind blew just right, the falling leaves formed a pattern - like a map!"',
-      image: '/images/fall/page-3.png',
+      image: '/images/fall/page-4.png',
     },
     {
       id: 5,

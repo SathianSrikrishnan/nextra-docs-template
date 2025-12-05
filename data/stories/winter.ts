@@ -11,7 +11,7 @@ export const winterStory: Story = {
     {
       id: 1,
       text: 'Snow fell softly on the Whispering Woods, transforming it into a glittering wonderland. Luna\'s three crystals pulsed with growing urgency - something magical was about to happen.',
-      image: '/images/winter/page-1.png',
+      image: '/images/winter/cover.png',
     },
     {
       id: 2,

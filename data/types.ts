@@ -96,7 +96,7 @@ export const SEASONS: SeasonInfo[] = [
       bg: 'bg-sky-50',
       text: 'text-sky-900',
       accent: 'bg-sky-400',
-      button: 'bg-sky-500 hover:bg-sky-600',
+      button: 'bg-blue-600 hover:bg-blue-700',
     }
   },
 ];
