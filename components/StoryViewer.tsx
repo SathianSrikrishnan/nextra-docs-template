@@ -161,7 +161,7 @@ export const StoryViewer: React.FC<StoryViewerProps> = ({ story, seasonInfo }) =
               flex-1 flex items-center justify-center gap-2 py-3 md:py-4 rounded-2xl font-display font-bold text-lg transition-all transform active:scale-95
               ${isFirstPage 
                 ? 'opacity-0 pointer-events-none' 
-                : 'bg-white text-gray-600 hover:bg-gray-50 border-2 border-gray-100 shadow-sm hover:shadow-md'
+                : 'bg-white text-gray-900 hover:bg-gray-50 border-2 border-gray-200 shadow-sm hover:shadow-md'
               }
             `}
             aria-label="Previous page"

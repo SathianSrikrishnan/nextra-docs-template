@@ -21,12 +21,12 @@ export const fallStory: Story = {
     {
       id: 3,
       text: 'The Keeper was an ancient spirit who blessed the forest with plenty each autumn. Without the Keeper, the animals wouldn\'t have enough food for winter.',
-      image: '/images/fall/page-3.png',
+      image: '/images/fall/page-3-keeper.png',
     },
     {
       id: 4,
       text: 'A small hedgehog named Bramble rolled up to them. "I found something! When the wind blew just right, the falling leaves formed a pattern - like a map!"',
-      image: '/images/fall/page-4.png',
+      image: '/images/fall/page-3.png',
     },
     {
       id: 5,
